@@ -37,30 +37,41 @@
             </div>
 
             <div class="page__form">
-                <h2>Let's do this!</h2>
+                <h2 class="page__form-intro">Let's do this!</h2>
                 <form class="form">
                     <div class="form__group form__group--name">
-                        <label class="form__label" for="firstname">FIRST NAME</label>
-                        <input class="form__input" id="firstname" type="text" required>
+                        <div class="form__field">
+                            <label class="form__label" for="firstname">FIRST NAME</label>
+                            <input class="form__input" id="firstname" type="text" required>
+                        </div>
 
-                        <label class="form__label" for="lastname">LAST NAME</label>
-                        <input class="form__input" id="lastname" type="text" required>
+                        <div class="form__field">
+                            <label class="form__label" for="lastname">LAST NAME</label>
+                            <input class="form__input" id="lastname" type="text" required>
+                        </div>
                     </div>
 
                     <div class="form__group form__group--contact">
-                        <label class="form__label" for="email">EMAIL</label>
-                        <input class="form__input" id="email" type="email" required>
-
-                        <label class="form__label" for="number">PHONE NUMBER</label>
-                        <input class="form__input" id="number" type="tel" required>
+                        <div class="form__field">
+                            <label class="form__label" for="email">EMAIL</label>
+                            <input class="form__input" id="email" type="email" required>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label" for="number">PHONE NUMBER</label>
+                            <input class="form__input" id="number" type="tel" required>
+                        </div>
                     </div>
 
                     <div class="form__group form__group--auth">
-                        <label class="form__label" for="password">PASSWORD</label>
-                        <input class="form__input" id="password" type="password" required>
+                        <div class="form__field">
+                            <label class="form__label" for="password">PASSWORD</label>
+                            <input class="form__input" id="password" type="password" required>
+                        </div>
 
-                        <label class="form__label" for="password-confirm">CONFIRM PASSWORD</label>
-                        <input class="form__input" id="password-confirm" type="password" required>
+                        <div class="form__field">
+                            <label class="form__label" for="password-confirm">CONFIRM PASSWORD</label>
+                            <input class="form__input" id="password-confirm" type="password" required>
+                        </div>
                     </div>
                 </form>
             </div>
