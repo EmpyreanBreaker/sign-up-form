@@ -3,16 +3,34 @@
     src: url(./fonts/Norse-Bold/Norse-Bold.woff) format(woff),
         url(./fonts/Norse-Bold/Norse-Bold.woff2) format(woff2);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Monteserrat";
-    src: url(./fonts/Monteserrat-Regular/Montserrat-Regular.woff) format(woff),
-        url(./fonts/Monteserrat-Regular/Montserrat-Regular.woff2) format(woff2);
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Regular/Montserrat-Regular.woff2) format("woff2"),
+        url(./fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff");
+    font-weight: 400;
     font-style: normal;
-    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff2) format("woff2"),
+        url(./fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Bold/Montserrat-Bold.woff2) format("woff2"),
+        url(./fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -82,7 +100,7 @@ body {
 .page__form {
     height: calc(100vh/3);
     background-color: white;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 100px;
 }
 
@@ -93,7 +111,7 @@ body {
 .form__group {
     display: flex;
     gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .form__field {
@@ -108,17 +126,33 @@ body {
 
 .page__footer {
     height: calc(100vh/3);
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+h2,
+label,
+p,
+button,
+p {
+    font-family: 'Monteserrat', 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+label,
+p,
+button,
+a {
+    font-weight: 600;
+}
+
+label {
+    font-size: 12px;
 }
 
 a:visited {
     color: white;
-}
-
-h2 {
-    font-family: 'Monteserrat', 'Courier New', Courier, monospace;
-}
-
-label {
-    font-family: 'Monteserrat', 'Courier New', Courier, monospace;
-    font-size: 12px;
 }
