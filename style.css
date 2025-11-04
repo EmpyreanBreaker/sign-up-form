@@ -123,6 +123,20 @@ body {
     top: -20px;
 }
 
+.form__input {
+    width: 225px;
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+}
+
+.form__input:focus {
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.8);
+    border: 2px solid rgba(90, 186, 237, 0.5)
+}
+
+.form__input:focus:invalid {
+    border: 2px solid red;
+}
 
 .page__footer {
     height: calc(100vh/3);
@@ -131,10 +145,10 @@ body {
 }
 
 h2,
-label,
 p,
-button,
-p {
+label,
+input,
+button {
     font-family: 'Monteserrat', 'Courier New', Courier, monospace;
 }
 
@@ -142,11 +156,14 @@ h2 {
     font-weight: 700;
 }
 
-label,
 p,
-button,
-a {
+label,
+button {
     font-weight: 600;
+}
+
+input {
+    font-weight: 400;
 }
 
 label {
