@@ -40,11 +40,11 @@ body {
 
 .page {
     display: flex;
-
 }
 
 .page__image {
     position: relative;
+    flex-shrink: 0;
 }
 
 .page__image--img {
@@ -144,6 +144,15 @@ body {
     padding-top: 40px;
 }
 
+.page__button {
+    margin-bottom: 40px;
+    width: 200px;
+    height: 40px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 8px;
+}
+
 h2,
 p,
 label,
@@ -152,24 +161,38 @@ button {
     font-family: 'Monteserrat', 'Courier New', Courier, monospace;
 }
 
-h2 {
+h2,
+button {
     font-weight: 700;
 }
 
 p,
-label,
-button {
+label {
     font-weight: 600;
 }
 
-input {
+input,
+a {
     font-weight: 400;
 }
 
-label {
-    font-size: 12px;
+a {
+    list-style: none;
+    color: white;
 }
 
 a:visited {
     color: white;
+}
+
+.page__login>a {
+    color: #596D48;
+}
+
+.page__login {
+    font-size: 18px;
+}
+
+label {
+    font-size: 12px;
 }
